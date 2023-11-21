@@ -1,0 +1,113 @@
+* {
+    box-sizing: border-box;
+}
+
+@media only screen and (max-width: 620px) {
+
+    /* Para celulares móviles: */
+    .menu,
+    .main,
+    .right {
+        width: 100%;
+    }
+}
+
+body {
+    margin: 0;
+    font-family: "Inria Sans-Bold", Helvetica;
+    height: 100%;
+    position: revert-layer;
+    background-color: white;
+}
+
+.grey-header {
+    background-color: #d9d9d9;
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    padding: 10px;
+    margin: auto;
+    text-align: center;
+}
+
+hr {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    opacity: 1;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+}
+
+.profesionales {
+    margin-top: 80px;
+}
+
+.fa {
+    font-size: 25px;
+}
+
+.checked {
+    color: orange;
+}
+
+.half {
+    background: linear-gradient(to right, orange 50%, black 50%);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.price {
+    color: grey;
+    font-size: 22px;
+}
+
+.number{
+    font-weight: bold;
+}
+
+.anterior {
+    width: 50px;
+    height: 50px;
+}
+
+.proximo {
+    width: 50px;
+    height: 50px;
+}
+
+
+
+.carousel-control-next {
+    height: 25px;
+    margin-top: 25%;
+}
+
+.carousel-control-prev {
+    height: 25px;
+    margin-top: 25%;
+}
+
+.confirmacion{
+    width: 30px;
+    height: 30px;
+}
+
+#pie {
+    background-color: #e5e5e5;
+    text-align: center;
+    padding: 30px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.cedat {
+    padding-left: 10px;
+}

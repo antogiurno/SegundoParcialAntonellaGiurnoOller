@@ -1,0 +1,217 @@
+* {
+    box-sizing: border-box;
+}
+
+@media only screen and (max-width: 620px) {
+
+    /* Para celulares móviles: */
+    .menu,
+    .main,
+    .right {
+        width: 100%;
+    }
+}
+
+body {
+    margin: 0;
+    font-family: "Inria Sans-Bold", Helvetica;
+    height: 100%;
+    position: absolute;
+}
+
+.grey-header {
+    background-color: #d9d9d9;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    padding: 10px;
+    margin: auto;
+    text-align: center;
+}
+
+.logo{
+  width: 50px;
+  height: 50px;
+}
+
+hr {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 100%;
+  opacity: 1;
+}
+
+header h1 {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.principal {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    /* overflow: auto; */
+    flex: 1;
+    display: flex;
+    align-content: flex-start;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.img-centro {
+    width: 100%;
+}
+
+#scrollspyHeading1 {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.rectangulo {
+    background-color: white;
+    width: 50%;
+    height: 30%;
+    position: inherit;
+    top: -10%;
+    left: 30%;
+    transform: translate(40%, -50%);
+    z-index: 1;
+    box-shadow: 0px 4px 4px #00000045;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2%;
+    flex-direction: column;
+}
+
+button {
+    background-color: #F593B66E;
+    border-radius: 4px;
+    width: 150px;
+    height: 100%;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #FF005C;
+  }
+
+.rectangulo h4{
+    font-weight: bold;
+    position: relative;
+    top: inherit;
+    font-size: 24px;
+}
+
+
+.BIENVENIDOS-CENTRO {
+    position: absolute;
+    width: 40%;
+    top: 14%;
+    left: 30%;
+    align-items: center;
+    text-shadow: 0px 4px 4px #010000;
+    font-family: "Inria Sans-Bold", Helvetica;
+    font-weight: 700;
+    color: #ffffff;
+    /* font-size: 5vw; */
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.bienvenido {
+  font-size: 40px;
+}
+
+.centro{
+  font-size: 24px;
+}
+
+#nosotros h4 {
+  padding: 10px;
+  font-size: 28px;
+  font-weight: bold;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+#nosotros p {
+  padding: 10px;
+  font-size: 20px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.servicios {
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.col {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  margin-bottom: 5px;
+}
+
+.card-text{
+  font-size: 20px;
+}
+
+.card-title{
+  font-weight: bold;
+}
+
+.ubicacion{
+  padding: 30px;
+  font-size: 28px;
+  font-weight: bold;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.ubicacion h4 {
+  font-weight: bold;
+}
+
+
+iframe{
+  border-radius: 4px;
+}
+
+
+footer{ 
+  background-color: #e5e5e5;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+#pie {
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.cedat {
+  padding-left: 10px;
+  font-weight: bold;
+  font-size: 28px;
+}

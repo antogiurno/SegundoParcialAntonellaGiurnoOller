@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Administradores</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="/styles/styleAdministradores.css">
+</head>
+
+<body>
+    <nav class="grey-header fixed-top">
+        <img class="logo" src="/images/Logo.png" />
+        <h1>CEDAT</h1>
+        <div class="dropdown">
+            <button class="btn btn-secondary" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="material-icons" style="font-size:36px">menu</i>
+            </button>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="index.html">Cerrar Sesión</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="abm container-fluid object-fit-xxl-contain border rounded">
+        <button class="btn btn-bd-primary py-2 d-flex align-items-center" id="bd-theme" type="button"
+            aria-expanded="false" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            <!-- <svg class="bi my-1 theme-icon-active" width="1em" height="1em"><use href="#sun-fill"></use></svg> -->
+            <i class='bi my-1 fas fa-plus' style='font-size:48px;color:green;width: 1em;height: 1em;'></i>
+            <span class="visually-hidden" id="bd-theme-text">Crear usuario</span>
+        </button>
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Alta de profesional</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form class="card-text">
+                            <div class="mb-3">
+                                <label for="recipient-name" class="col-form-label">Nombre:</label>
+                                <input type="text" class="form-control" id="nombre">
+                            </div>
+                            <div class="mb-3">
+                                <label for="recipient-last-name" class="col-form-label">Apellido:</label>
+                                <input type="text" class="form-control" id="apellido">
+                            </div>
+                            <div class="mb-3">
+                                <label for="recipient-name" class="col-form-label">Correo:</label>
+                                <input type="text" class="form-control" id="correo">
+                            </div>
+                            <div class="mb-3">
+                                <label for="recipient-name" class="col-form-label">Número de telefono:</label>
+                                <input type="text" class="form-control" id="telefono">
+                            </div>
+                            <div class="mb-3">
+                                <label for="recipient-name" class="col-form-label">Especialidad:</label>
+                                <input type="text" class="form-control" id="especialidad">
+                            </div>
+                            <div class="mb-3">
+                                <label for="recipient-name" class="col-form-label">Tarifa por hora:</label>
+                                <input type="text" class="form-control" id="tarifa">
+                            </div>
+                            <div class="mb-3">
+                                <label for="message-text" class="col-form-label">Descripción:</label>
+                                <textarea class="form-control"
+                                    id="message-text"></textarea>
+                            </div>
+                        </form>
+                        <div>
+                            <button id="btnAlta" type="button" class="btn btn-success">Crear</button>
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div class="card w-100">
+                <div class="card-body">
+                    <h5 class="card-title">Gema Lopez</h5>
+                    <!-- <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6> -->
+                    <form class="card-text">
+                        <div class="mb-3">
+                            <label for="recipient-name" class="col-form-label">Nombre:</label>
+                            <input type="text" class="form-control" id="nombre" value="Gema">
+                        </div>
+                        <div class="mb-3">
+                            <label for="recipient-last-name" class="col-form-label">Apellido:</label>
+                            <input type="text" class="form-control" id="apellido" value="Lopez">
+                        </div>
+                        <div class="mb-3">
+                            <label for="recipient-name" class="col-form-label">Correo:</label>
+                            <input type="text" class="form-control" id="correo" value="glopez@gmail.com">
+                        </div>
+                        <div class="mb-3">
+                            <label for="recipient-name" class="col-form-label">Número de telefono:</label>
+                            <input type="text" class="form-control" id="telefono" value="011 1234 1234">
+                        </div>
+                        <div class="mb-3">
+                            <label for="recipient-name" class="col-form-label">Especialidad:</label>
+                            <input type="text" class="form-control" id="especialidad" value="Psicologia">
+                        </div>
+                        <div class="mb-3">
+                            <label for="recipient-name" class="col-form-label">Tarifa por hora:</label>
+                            <input type="text" class="form-control" id="tarifa" value="1800">
+                        </div>
+                        <div class="mb-3">
+                            <label for="message-text" class="col-form-label">Descripción:</label>
+                            <textarea class="form-control"
+                                id="message-text">Gema es una profesional comprometida con 3 años de experiencia.</textarea>
+                        </div>
+                    </form>
+                    <div class="botonesBM">
+                        <button type="button" class="btn btn-primary modificarBtn">Modificar</button>
+                        <button class='btn-danger fas fa-trash-alt eliminar' style='font-size:28px'></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card w-100" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Franco Burgos</h5>
+                    <!-- <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6> -->
+                    <form class="card-text">
+                        <div class="mb-3">
+                            <label for="recipient-name" class="col-form-label">Nombre:</label>
+                            <input type="text" class="form-control" id="nombre" value="Franco">
+                        </div>
+                        <div class="mb-3">
+                            <label for="recipient-last-name" class="col-form-label">Apellido:</label>
+                            <input type="text" class="form-control" id="apellido" value="Burgos">
+                        </div>
+                        <div class="mb-3">
+                            <label for="recipient-name" class="col-form-label">Correo:</label>
+                            <input type="text" class="form-control" id="correo" value="fburgos@gmail.com">
+                        </div>
+                        <div class="mb-3">
+                            <label for="recipient-name" class="col-form-label">Número de telefono:</label>
+                            <input type="text" class="form-control" id="telefono" value="011 1234 1234">
+                        </div>
+                        <div class="mb-3">
+                            <label for="recipient-name" class="col-form-label">Especialidad:</label>
+                            <input type="text" class="form-control" id="especialidad" value="Psicologia">
+                        </div>
+                        <div class="mb-3">
+                            <label for="recipient-name" class="col-form-label">Tarifa por hora:</label>
+                            <input type="text" class="form-control" id="tarifa" value="1600">
+                        </div>
+                        <div class="mb-3">
+                            <label for="message-text" class="col-form-label">Descripción:</label>
+                            <textarea class="form-control"
+                                id="message-text">Franco es un profesional comprometido con 8 años de experiencia.</textarea>
+                        </div>
+                    </form>
+                    <div class="botonesBM">
+                        <button type="button" class="btn btn-primary modificarBtn">Modificar</button>
+                        <button class='btn-danger fas fa-trash-alt eliminar' style='font-size:28px'></button>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="card w-100" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Pablo Vaccar</h5>
+                    <!-- <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6> -->
+                    <form class="card-text">
+                        <div class="mb-3">
+                            <label for="recipient-name" class="col-form-label">Nombre:</label>
+                            <input type="text" class="form-control" id="nombre" value="Pablo">
+                        </div>
+                        <div class="mb-3">
+                            <label for="recipient-last-name" class="col-form-label">Apellido:</label>
+                            <input type="text" class="form-control" id="apellido" value="Vaccar">
+                        </div>
+                        <div class="mb-3">
+                            <label for="recipient-name" class="col-form-label">Correo:</label>
+                            <input type="text" class="form-control" id="correo" value="pvaccar@gmail.com">
+                        </div>
+                        <div class="mb-3">
+                            <label for="recipient-name" class="col-form-label">Número de telefono:</label>
+                            <input type="text" class="form-control" id="telefono" value="011 1235 1235">
+                        </div>
+                        <div class="mb-3">
+                            <label for="recipient-name" class="col-form-label">Especialidad:</label>
+                            <input type="text" class="form-control" id="especialidad" value="Terapeuta">
+                        </div>
+                        <div class="mb-3">
+                            <label for="recipient-name" class="col-form-label">Tarifa por hora:</label>
+                            <input type="text" class="form-control" id="tarifa" value="1700">
+                        </div>
+                        <div class="mb-3">
+                            <label for="message-text" class="col-form-label">Descripción:</label>
+                            <textarea class="form-control"
+                                id="message-text">Pablo es un profesional comprometido con 6 años de experiencia.</textarea>
+                        </div>
+
+                    </form>
+                    <div class="botonesBM">
+                        <button type="button" class="btn btn-primary modificarBtn">Modificar</button>
+                        <button class='btn-danger fas fa-trash-alt eliminar' style='font-size:28px'></button>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="card w-100" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Eduardo Pan</h5>
+                    <!-- <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6> -->
+                    <form class="card-text">
+                        <div class="mb-3">
+                            <label for="recipient-name" class="col-form-label">Nombre:</label>
+                            <input type="text" class="form-control" id="nombre" value="Eduardo">
+                        </div>
+                        <div class="mb-3">
+                            <label for="recipient-last-name" class="col-form-label">Apellido:</label>
+                            <input type="text" class="form-control" id="apellido" value="Pan">
+                        </div>
+                        <div class="mb-3">
+                            <label for="recipient-name" class="col-form-label">Correo:</label>
+                            <input type="text" class="form-control" id="correo" value="epan@gmail.com">
+                        </div>
+                        <div class="mb-3">
+                            <label for="recipient-name" class="col-form-label">Número de telefono:</label>
+                            <input type="text" class="form-control" id="telefono" value="011 1224 1224">
+                        </div>
+                        <div class="mb-3">
+                            <label for="recipient-name" class="col-form-label">Especialidad:</label>
+                            <input type="text" class="form-control" id="especialidad" value="Asistente terapeuta">
+                        </div>
+                        <div class="mb-3">
+                            <label for="recipient-name" class="col-form-label">Tarifa por hora:</label>
+                            <input type="text" class="form-control" id="tarifa" value="1900">
+                        </div>
+                        <div class="mb-3">
+                            <label for="message-text" class="col-form-label">Descripción:</label>
+                            <textarea class="form-control"
+                                id="message-text">Eduardo es un profesional comprometido con 8 años de experiencia.</textarea>
+                        </div>
+                    </form>
+                    <div class="botonesBM">
+                        <button type="button" class="btn btn-primary modificarBtn">Modificar</button>
+                        <button class='btn-danger fas fa-trash-alt eliminar' style='font-size:28px'></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card w-100" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Patricia Manzan</h5>
+                    <!-- <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6> -->
+                    <form class="card-text">
+                        <div class="mb-3">
+                            <label for="recipient-name" class="col-form-label">Nombre:</label>
+                            <input type="text" class="form-control" id="nombre" value="Patricia">
+                        </div>
+                        <div class="mb-3">
+                            <label for="recipient-last-name" class="col-form-label">Apellido:</label>
+                            <input type="text" class="form-control" id="apellido" value="Manzan">
+                        </div>
+                        <div class="mb-3">
+                            <label for="recipient-name" class="col-form-label">Correo:</label>
+                            <input type="text" class="form-control" id="correo" value="pmanzan@gmail.com">
+                        </div>
+                        <div class="mb-3">
+                            <label for="recipient-name" class="col-form-label">Número de telefono:</label>
+                            <input type="text" class="form-control" id="telefono" value="011 1334 1334">
+                        </div>
+                        <div class="mb-3">
+                            <label for="recipient-name" class="col-form-label">Especialidad:</label>
+                            <input type="text" class="form-control" id="especialidad" value="Psicologia">
+                        </div>
+                        <div class="mb-3">
+                            <label for="recipient-name" class="col-form-label">Tarifa por hora:</label>
+                            <input type="text" class="form-control" id="tarifa" value="4500">
+                        </div>
+                        <div class="mb-3">
+                            <label for="message-text" class="col-form-label">Descripción:</label>
+                            <textarea class="form-control"
+                                id="message-text">Patricia es una profesional comprometida con 12 años de experiencia.</textarea>
+                        </div>
+                    </form>
+                    <div class="botonesBM">
+                        <button type="button" class="btn btn-primary modificarBtn">Modificar</button>
+                        <button class='btn-danger fas fa-trash-alt eliminar' style='font-size:28px'></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card w-100" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Romina Benazi</h5>
+                    <!-- <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6> -->
+                    <form class="card-text">
+                        <div class="mb-3">
+                            <label for="recipient-name" class="col-form-label">Nombre:</label>
+                            <input type="text" class="form-control" id="nombre" value="Romina">
+                        </div>
+                        <div class="mb-3">
+                            <label for="recipient-last-name" class="col-form-label">Apellido:</label>
+                            <input type="text" class="form-control" id="apellido" value="Benazi">
+                        </div>
+                        <div class="mb-3">
+                            <label for="recipient-name" class="col-form-label">Correo:</label>
+                            <input type="text" class="form-control" id="correo" value="rbenazi@gmail.com">
+                        </div>
+                        <div class="mb-3">
+                            <label for="recipient-name" class="col-form-label">Número de telefono:</label>
+                            <input type="text" class="form-control" id="telefono" value="011 2232 2232">
+                        </div>
+                        <div class="mb-3">
+                            <label for="recipient-name" class="col-form-label">Especialidad:</label>
+                            <input type="text" class="form-control" id="especialidad" value="Asistente terpaeutica">
+                        </div>
+                        <div class="mb-3">
+                            <label for="recipient-name" class="col-form-label">Tarifa por hora:</label>
+                            <input type="text" class="form-control" id="tarifa" value="1500">
+                        </div>
+                        <div class="mb-3">
+                            <label for="message-text" class="col-form-label">Descripción:</label>
+                            <textarea class="form-control"
+                                id="message-text">Romina es una profesional comprometida con 3 años de experiencia.</textarea>
+                        </div>
+                    </form>
+                    <div class="botonesBM">
+                        <button type="button" class="btn btn-primary modificarBtn">Modificar</button>
+                        <button class='btn-danger fas fa-trash-alt eliminar' style='font-size:28px'></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card w-100" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Rosa Silva</h5>
+                    <!-- <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6> -->
+                    <form class="card-text">
+                        <div class="mb-3">
+                            <label for="recipient-name" class="col-form-label">Nombre:</label>
+                            <input type="text" class="form-control" id="nombre" value="Rosa">
+                        </div>
+                        <div class="mb-3">
+                            <label for="recipient-last-name" class="col-form-label">Apellido:</label>
+                            <input type="text" class="form-control" id="apellido" value="Silva">
+                        </div>
+                        <div class="mb-3">
+                            <label for="recipient-name" class="col-form-label">Correo:</label>
+                            <input type="text" class="form-control" id="correo" value="rsilva@gmail.com">
+                        </div>
+                        <div class="mb-3">
+                            <label for="recipient-name" class="col-form-label">Número de telefono:</label>
+                            <input type="text" class="form-control" id="telefono" value="011 1234 1234">
+                        </div>
+                        <div class="mb-3">
+                            <label for="recipient-name" class="col-form-label">Especialidad:</label>
+                            <input type="text" class="form-control" id="especialidad" value="Psicologia">
+                        </div>
+                        <div class="mb-3">
+                            <label for="recipient-name" class="col-form-label">Tarifa por hora:</label>
+                            <input type="text" class="form-control" id="tarifa" value="5000">
+                        </div>
+                        <div class="mb-3">
+                            <label for="message-text" class="col-form-label">Descripción:</label>
+                            <textarea class="form-control"
+                                id="message-text">Rosa es una profesional comprometida con 10 años de experiencia.</textarea>
+                        </div>
+                    </form>
+                    <div class="botonesBM">
+                        <button type="button" class="btn btn-primary modificarBtn">Modificar</button>
+                        <button class='btn-danger fas fa-trash-alt eliminar' style='font-size:28px'></button>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="card w-100" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Martina Gevara</h5>
+                    <!-- <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6> -->
+                    <form class="card-text">
+                        <div class="mb-3">
+                            <label for="recipient-name" class="col-form-label">Nombre:</label>
+                            <input type="text" class="form-control" id="nombre" value="Martina">
+                        </div>
+                        <div class="mb-3">
+                            <label for="recipient-last-name" class="col-form-label">Apellido:</label>
+                            <input type="text" class="form-control" id="apellido" value="Gevara">
+                        </div>
+                        <div class="mb-3">
+                            <label for="recipient-name" class="col-form-label">Correo:</label>
+                            <input type="text" class="form-control" id="correo" value="mgevara@gmail.com">
+                        </div>
+                        <div class="mb-3">
+                            <label for="recipient-name" class="col-form-label">Número de telefono:</label>
+                            <input type="text" class="form-control" id="telefono" value="011 1221 1221">
+                        </div>
+                        <div class="mb-3">
+                            <label for="recipient-name" class="col-form-label">Especialidad:</label>
+                            <input type="text" class="form-control" id="especialidad" value="Terapeuta">
+                        </div>
+                        <div class="mb-3">
+                            <label for="recipient-name" class="col-form-label">Tarifa por hora:</label>
+                            <input type="text" class="form-control" id="tarifa" value="1700">
+                        </div>
+                        <div class="mb-3">
+                            <label for="message-text" class="col-form-label">Descripción:</label>
+                            <textarea class="form-control"
+                                id="message-text">Martina es una profesional comprometida con 4 años de experiencia.</textarea>
+                        </div>
+                    </form>
+                    <div class="botonesBM">
+                        <button type="button" class="btn btn-primary modificarBtn">Modificar</button>
+                        <button class='btn-danger fas fa-trash-alt eliminar' style='font-size:28px'></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card w-100" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Zunilda Aires</h5>
+                    <!-- <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6> -->
+                    <form class="card-text">
+                        <div class="mb-3">
+                            <label for="recipient-name" class="col-form-label">Nombre:</label>
+                            <input type="text" class="form-control" id="nombre" value="Zunilda">
+                        </div>
+                        <div class="mb-3">
+                            <label for="recipient-last-name" class="col-form-label">Apellido:</label>
+                            <input type="text" class="form-control" id="apellido" value="Aires">
+                        </div>
+                        <div class="mb-3">
+                            <label for="recipient-name" class="col-form-label">Correo:</label>
+                            <input type="text" class="form-control" id="correo" value="zaires@gmail.com">
+                        </div>
+                        <div class="mb-3">
+                            <label for="recipient-name" class="col-form-label">Número de telefono:</label>
+                            <input type="text" class="form-control" id="telefono" value="011 4234 4234">
+                        </div>
+                        <div class="mb-3">
+                            <label for="recipient-name" class="col-form-label">Especialidad:</label>
+                            <input type="text" class="form-control" id="especialidad" value="Acompañante terapeutico">
+                        </div>
+                        <div class="mb-3">
+                            <label for="recipient-name" class="col-form-label">Tarifa por hora:</label>
+                            <input type="text" class="form-control" id="tarifa" value="1500">
+                        </div>
+                        <div class="mb-3">
+                            <label for="message-text" class="col-form-label">Descripción:</label>
+                            <textarea class="form-control"
+                                id="message-text">Zunilda es una profesional comprometida con 3 años de experiencia.</textarea>
+                        </div>
+                    </form>
+                    <div class="botonesBM">
+                        <button type="button" class="btn btn-primary modificarBtn">Modificar</button>
+                        <button class='btn-danger fas fa-trash-alt eliminar' style='font-size:28px'></button>
+                    </div>
+                </div>
+            </div>
+
+
+    </section>
+    <footer class="pie navbar fixed-bottom">
+        <span class="cedat">CEDAT</span>
+        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+            <li class="ms-3">
+                <a class="text-body-secondary" href="https://twitter.com/" target="_blank">
+                    <img class="bi" width="30" height="30" src="https://lcsi.umh.es/docs/twitter/pajarito.png">
+                </a>
+            </li>
+            <li class="ms-3">
+                <a class="text-body-secondary" href="https://www.instagram.com/" target="_blank">
+                    <img class="bi" width="30" height="30"
+                        src="https://cdn-icons-png.flaticon.com/256/4138/4138124.png">
+                </a>
+            </li>
+            <li class="ms-3">
+                <a class="text-body-secondary" href="https://facebook.com/" target="_blank">
+                    <img class="bi" width="30" height="30"
+                        src="https://www.shareicon.net/data/2015/05/29/45861_facebook_256x256.png">
+                </a>
+            </li>
+        </ul>
+    </footer>
+    <script src="/scripts/scriptAdministradores.js"></script>
+</body>
+
+</html>

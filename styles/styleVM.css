@@ -1,0 +1,113 @@
+* {
+    box-sizing: border-box;
+}
+
+@media only screen and (max-width: 620px) {
+
+    /* Para celulares móviles: */
+    .menu,
+    .main,
+    .right {
+        width: 100%;
+    }
+}
+
+body {
+    margin: 0;
+    font-family: "Inria Sans-Bold", Helvetica;
+    height: 100%;
+}
+
+.grey-header {
+    background-color: #d9d9d9;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    padding: 10px;
+    margin: auto;
+    text-align: center;
+    position: relative;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+}
+
+img{
+    opacity: 0.3;
+    max-width: -webkit-fill-available;
+    z-index: -1;
+    position: relative;
+    background-attachment: scroll;
+}
+
+
+.fondo-imagen{
+    background-image: url("https://redat.com.ar/wp-content/uploads/2021/10/serv_3_1.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+div .row{
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.container{
+    display: flow-root;
+    max-width: fit-content;
+    padding: 0;
+    position: relative;
+}
+
+.fondo-color {
+    color: black;
+    z-index: -1;
+    background-color: rgba(0, 128, 0, 0.3);
+    display: flex;
+    position: absolute;
+    align-items: baseline;
+    padding: 20px;
+}
+
+.contenido{
+    flex-direction: column;
+    display: contents;
+}
+
+.form-border {
+    z-index: 0;
+    opacity: 1;
+}
+
+form{
+    padding: 20px;
+}
+
+.row {
+    margin-top: 0;
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.col {
+    margin-top: 0;
+}
+
+.container-sm {
+    margin-bottom: 15px;
+}
+
+.volver{
+    margin-bottom: 30px;
+}
+
+#pie {
+    background-color: #e5e5e5;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}

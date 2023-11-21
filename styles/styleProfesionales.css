@@ -1,0 +1,85 @@
+* {
+    box-sizing: border-box;
+}
+
+@media only screen and (max-width: 620px) {
+
+    /* Para celulares móviles: */
+    .menu,
+    .main,
+    .right {
+        width: 100%;
+    }
+}
+
+body {
+    margin: 0;
+    font-family: "Inria Sans-Bold", Helvetica;
+    height: 100%;
+    position: absolute;
+    background-color: white;
+    width: 100%;
+}
+
+.toast{
+    bottom: 7%!important;
+    right: 0%!important;
+    position: fixed;
+}
+
+.grey-header {
+    background-color: #d9d9d9;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    padding: 10px;
+    margin: auto;
+    text-align: center;
+}
+
+hr {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    opacity: 1;
+}
+
+.profesionales {
+    margin-top: 80px;
+    top: 80px;
+    position: absolute;
+    width: 100%;
+    right: 0px;
+    left: 0px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+}
+
+.confirmacion{
+    width: 30px;
+    height: 30px;
+}
+
+footer{
+    background-color: #d9d9d9;
+}
+
+#pie {
+    text-align: center;
+    padding: 30px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.cedat {
+    padding-left: 10px;
+}

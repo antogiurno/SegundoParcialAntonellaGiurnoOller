@@ -1,0 +1,103 @@
+* {
+    box-sizing: border-box;
+}
+
+@media only screen and (max-width: 620px) {
+
+    /* Para celulares móviles: */
+    .menu,
+    .main,
+    .right {
+        width: 100%;
+    }
+}
+
+body {
+    margin: 0;
+    font-family: "Inria Sans-Bold", Helvetica;
+    height: 100%;
+    position: revert-layer;
+    background-color: white;
+}
+
+/* div{
+    display: unset;
+} */
+
+.grey-header {
+    background-color: #d9d9d9;
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    padding: 10px;
+    margin: auto;
+    text-align: center;
+}
+
+hr {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    opacity: 1;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+}
+
+.card {
+    margin-bottom: 20px;
+    border: black;
+    padding: 10px;
+    border-style: solid;
+}
+
+.card-title {
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.abm {
+    margin-top: 30%;
+    margin-bottom: 20%;
+}
+
+.accordion-button {
+    --bs-accordion-btn-active-icon: none;
+}
+
+.eliminar {
+    background-color: transparent;
+    border: unset;
+    color: red;
+}
+
+.botonesBM {
+    display: flex;
+    justify-content: space-between;
+}
+
+.fa-times-circle {
+    position: absolute;
+    right: 2%;
+}
+
+footer {
+    background-color: #d9d9d9;
+}
+
+#pie {
+    text-align: center;
+    padding: 30px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.cedat {
+    padding-left: 10px;
+}

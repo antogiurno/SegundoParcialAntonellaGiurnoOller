@@ -1,0 +1,102 @@
+* {
+    box-sizing: border-box;
+}
+
+@media only screen and (max-width: 620px) {
+
+    /* Para celulares móviles: */
+    .menu,
+    .main,
+    .right {
+        width: 100%;
+    }
+}
+
+body {
+    margin: 0;
+    font-family: "Inria Sans-Bold", Helvetica;
+    height: 100%;
+    position: absolute;
+    background-color: white;
+}
+
+.grey-header {
+    background-color: #d9d9d9;
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    padding: 10px;
+    margin-bottom: auto;
+    margin: auto;
+    text-align: center;
+}
+
+hr {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    width: 100%;
+    opacity: 1;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+}
+
+.responder {
+    position: fixed;
+    right: 45px;
+}
+.inbox {
+    margin-top: 20%!important;
+    position: fixed;
+}
+
+.auxiliar{
+    margin-top: 60%!important;
+}
+
+#enviarBtnUno{
+    top: 50%;
+}
+
+#enviarBtnDos{
+    top: 60%;
+}
+
+#enviarBtnTres{
+    top: 70%;
+}
+
+.list-group-item-success {
+    margin-left: 20px;
+}
+
+.list-group-item-dark {
+    margin-right: 20px;
+}
+
+.form-floating {
+    margin-top: 20px;
+}
+
+button{
+    background-color: transparent;
+    border: transparent;
+}
+
+#pie {
+    background-color: #e5e5e5;
+    text-align: center;
+    padding: 30px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.cedat {
+    padding-left: 10px;
+}
