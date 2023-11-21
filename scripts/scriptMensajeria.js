@@ -13,21 +13,21 @@ if (gridSystemModal) {
 
 
 document.getElementById('enviarBtnUno').addEventListener('click', function() {
-  $(this).hide();
-  document.getElementById('floatingTextarea').value = '';
+  // $(this).hide();
   alert('¡Su mensaje será revisado por un moderador!');
+  document.getElementById('floatingTextarea').value = '';
 });
 
 
 document.getElementById('enviarBtnDos').addEventListener('click', function() {
-  $(this).hide();
-  document.getElementById('floatingTextarea').value = '';
+  // $(this).hide();
   alert('¡Su mensaje será revisado por un moderador!');
+  document.getElementById('floatingTextarea').value = '';
 });
 
 
 document.getElementById('enviarBtnTres').addEventListener('click', function() {
-  $(this).hide();
-  document.getElementById('floatingTextarea').value = '';
+  // $(this).hide();
   alert('¡Su mensaje será revisado por un moderador!');
+  document.getElementsById('floatingTextarea').value = '';
 });
